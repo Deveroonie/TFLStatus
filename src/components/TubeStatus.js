@@ -32,10 +32,10 @@ function TubeStatus() {
       {response.map(data => (
         <div key={data.id} className="p-4 bg-gray-800 rounded-lg">
           <div
-            className="cursor-pointer font-bold mb-2 lnnm text-2xl"
+            className="cursor-pointer font-bold mb-2 lnnm text-2xl flex"
             onClick={() => handleLineClick(data.id)}
           >
-            {data.name} - {data.lineStatuses[0].statusSeverityDescription}
+            {data.name} - {data.lineStatuses[0].statusSeverityDescription}&nbsp;<img src="/underground.png" width={64} h={64} alt={"Underground Logo"}></img>
           </div>
           {expandedLine === data.id && (
             <div className="mt-2 stnm text-lg">
