@@ -4,6 +4,7 @@ import DLRStatus from "./components/DLRStatus";
 import ElizabethLineStatus from "./components/ElizabethLineStatus";
 import OvergroundStatus from "./components/OvergroundStatus";
 import FerryStatus from "./components/FerryStatus";
+import TramStatus from "./components/TramStatus";
 
 function App() {
 
@@ -11,12 +12,13 @@ function App() {
   return (
     <div>
       <div className="container mx-auto p-8 m-10">
-        <h1 className="text-white text-center text-3xl">TfL Network Status (Underground, DLR, ELizabeth Line, Overground & Ferries)</h1>
+        <h1 className="text-white text-center text-3xl">TfL Network Status (Underground, DLR, ELizabeth Line, Trams, Overground & Ferries)</h1>
         <br />
     <TubeStatus></TubeStatus>
     <DLRStatus></DLRStatus>
     <ElizabethLineStatus></ElizabethLineStatus>
     <OvergroundStatus></OvergroundStatus>
+    <TramStatus></TramStatus>
     <FerryStatus></FerryStatus>
     </div>
     </div>
